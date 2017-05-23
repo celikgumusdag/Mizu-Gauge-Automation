@@ -1,0 +1,15 @@
+#Force to ignore check-in
+
+packages/*
+Mizu-Gauge-Automation/bin/*
+Mizu-Gauge-Automation/bin/Debug/*
+Mizu-Gauge-Automation/logs/*
+Mizu-Gauge-Automation/obj/*
+
+
+#Force to perform check-in
+!.nuget/NuGet.exe
+!Mizu-Gauge-Automation/Helpers
+!Mizu-Gauge-Automation/Env
+!Mizu-Gauge-Automation/Steps
+!Mizu-Gauge-Automation/Specs
