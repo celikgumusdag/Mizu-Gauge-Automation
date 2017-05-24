@@ -9,6 +9,7 @@ About
 This example project helps you understand Gauge with Selenium in C# language.
 
 You can find more information about gauge in this webpage: https://www.getgauge.io
+
 You can find more information about selenium in this webpage: http://www.seleniumhq.org
 
 Usage
@@ -17,11 +18,11 @@ For compile this example you need to use Visual Studio 2012 or more. (Which is s
 
 You can open project by double click solution file (Derivco-Automation-Assessment.sln) or Visual Studio -> File -> Open -> Project/Solution
 
-For running the test cases you need to add "NUnit Test Adapter" extension from the menu Tools -> Extensions and Updates.
+For running the test cases you need to add "NUnit Test Adapter" extension from the menu Tools -> Extensions and Updates :
 
 ![alt text](https://github.com/celikgumusdag/Mizu-Gauge-Automation/blob/master/img/extension.PNG)
 
-After the download this extension you can see and execute Test Cases from the menu Test -> Windows -> Test Explorer
+After the download this extension you can see and execute Test Cases from the menu Test -> Windows -> Test Explorer :
 
 ![alt text](https://github.com/celikgumusdag/Mizu-Gauge-Automation/blob/master/img/test-explorer.PNG)
 
