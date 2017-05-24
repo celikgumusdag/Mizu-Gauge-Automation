@@ -1,5 +1,4 @@
 # Mizu-Gauge-Automation
-[![Gauge Badge](http://getgauge.io/Gauge_Badge.svg)](http://getgauge.io)
 
 Description
 ------------
@@ -142,3 +141,7 @@ This repository is open source software provided under the Apache License 2.0.
 This documentation and other similar content use the Creative Commons Attribution 3.0 Unported license. 
 
 Most libraries and tools in the ecosystem are also open source, but they may use different licenses.
+
+Gauge Badge
+------------
+[![Gauge Badge](http://getgauge.io/Gauge_Badge.svg)](http://getgauge.io)
