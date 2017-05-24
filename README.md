@@ -34,15 +34,73 @@ Project Structure
 ------------
 Under the solution "Mizu-Gauge-Automation" there are 4 types of packages they are:
 
--Env
-
--Helpers
-
--Specs
-
--Steps
-
 ![alt text](https://github.com/celikgumusdag/Mizu-Gauge-Automation/blob/master/img/project.PNG)
+
+#### Env
+
+This package include properties of Gauge project such as gauge report directory, overwrite existing report, screenshot on failure, log directory etc.
+
+#### Helpers
+
+This package include critical classes for the automation such as DriverFactory.cs
+
+In Driver.cs, project bringing the setting about Webdriver and implement it.
+
+This settings are Browser type and options about the browser.
+
+#### Specs
+
+This package include files which is written in Gauge Business language. Type of file is ending with ".spec"
+
+Main purpose of writing with Gauge spec language is make the automation with an employee who has low know-how in software languages.
+
+For Example:
+
+```gherkin
+Login
+==========================
+
+This automation for login test steps.
+
+* Go to "http://www.mizu.com"
+* I see url is "https://www.mizu.com/"
+* Click ".header__login" element
+* I see url is "https://www.mizu.com/uyelik"
+
+Invalid Login
+-----------
+
+* Fill ".login__left #Email" as "invalidmail@example.com"
+* Fill ".login__left #Password" as "invalidpassword"
+* Click ".login__btn-member" element
+* I see url is "https://www.mizu.com/uyelik"
+
+Valid Login
+-----------
+
+* Fill ".login__left #Email" as "validmail@example.com"
+* Fill ".login__left #Password" as "validpassword"
+* Click ".login__btn-member" element
+* I see url is "https://www.mizu.com/"
+```
+
+#### Steps
+
+This include code-behind part of Gauge spec language which is written C#.
+
+Such as initialize driver, closing driver, opening new page, click element in the page, fill textbox in the page etc.
+
+FluentAssertions performing in this classes.
+
+Example Assertion:
+```csharp
+[Step("I see url is <url>")]
+public void ISeeUrlIs(string url)
+{
+    string current = _driver.Url;
+    current.Should().Be(url);
+}
+```
 
 NuGet Packages
 ------------
