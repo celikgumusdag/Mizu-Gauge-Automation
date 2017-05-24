@@ -1,8 +1,12 @@
-﻿using System;
+﻿using Gauge.CSharp.Lib.Attribute;
+using GaugeProjectTemplate.Helpers;
+using OpenQA.Selenium;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FluentAssertions;
 
 namespace GaugeProjectTemplate.Steps
 {
@@ -14,6 +18,7 @@ namespace GaugeProjectTemplate.Steps
         public void Initialize()
         {
             _driver = DriverFactory.GetDriver();
+            _driver.Manage().Window.Maximize();
         }
 
         [AfterSuite]
@@ -41,6 +46,13 @@ namespace GaugeProjectTemplate.Steps
             var element = _driver.FindElement(By.CssSelector(css));
             element.Clear();
             element.SendKeys(text);
+        }
+
+        [Step("I see url is <url>")]
+        public void ISeeUrlIs(string url)
+        {
+            string current = _driver.Url;
+            current.Should().Be(url);
         }
     }
 }
