@@ -1,24 +1,25 @@
 # Mizu-Gauge-Automation
+[![Gauge Badge](http://getgauge.io/Gauge_Badge.svg)](http://getgauge.io)
 
 Description
 ------------
-Simple implementation of Gauge Test Automation with using C#
+Simple implementation of ThoughtWorks Inc. Test Automation Framework "Gauge" with using C#.
 
 About
 ------------
-This example project helps you understand Gauge with Selenium in C# language.
+This example project helps you understand Gauge Framework with Selenium in C# language.
 
-You can find more information about gauge in this webpage: https://www.getgauge.io
+More information about gauge in this webpage: https://www.getgauge.io
 
-You can find more information about selenium in this webpage: http://www.seleniumhq.org
+More information about selenium in this webpage: http://www.seleniumhq.org
 
 Usage
 ------------
-For compile this example you need to use Visual Studio 2012 or more. (Which is support .Net Framework version 4.5.1)
+For compile this project you need to use Visual Studio 2012 or more. (Which is support .Net Framework version 4.5.1)
 
-You can open project by double click solution file (Derivco-Automation-Assessment.sln) or Visual Studio -> File -> Open -> Project/Solution
+You can open project by double click solution file (Mizu-Gauge-Automation.sln) or Visual Studio -> File -> Open -> Project/Solution
 
-For running the test cases you need to add "NUnit Test Adapter" extension from the menu Tools -> Extensions and Updates :
+For running the test cases you need to add "Gauge plugin for VisualStudio" extension from the menu Tools -> Extensions and Updates :
 
 ![alt text](https://github.com/celikgumusdag/Mizu-Gauge-Automation/blob/master/img/extension.PNG)
 
@@ -26,7 +27,7 @@ After the download this extension you can see and execute Test Cases from the me
 
 ![alt text](https://github.com/celikgumusdag/Mizu-Gauge-Automation/blob/master/img/test-explorer.PNG)
 
-When you execute the test, Gauge will create a report directory and report html file such as:
+When you are complete to executing the test, Gauge Framework will create a report directory and report html file such as:
 
 ![alt text](https://github.com/celikgumusdag/Mizu-Gauge-Automation/blob/master/img/report.PNG)
 
@@ -38,15 +39,17 @@ Under the solution "Mizu-Gauge-Automation" there are 4 types of packages they ar
 
 #### Env
 
-This package include properties of Gauge project such as gauge report directory, overwrite existing report, screenshot on failure, log directory etc.
+This package include properties of Gauge project such as gauge report directory, overwrite existing report, screenshot on failure, log directory, selected browser etc.
 
 #### Helpers
 
 This package include critical classes for the automation such as DriverFactory.cs
 
-In Driver.cs, project bringing the setting about Webdriver and implement it.
+In DriverFactory.cs, project bringing the setting about Webdriver and implement it.
 
-This settings are Browser type and options about the browser.
+This settings are Browser type and options about the browser.(capabilities)
+
+For example you can change the value of "Browser" in environment value as chrome, firefox or ie.
 
 #### Specs
 
