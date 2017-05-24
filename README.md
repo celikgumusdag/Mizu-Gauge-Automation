@@ -142,6 +142,6 @@ This documentation and other similar content use the Creative Commons Attributio
 
 Most libraries and tools in the ecosystem are also open source, but they may use different licenses.
 
-Gauge Badge
-------------
+
+
 [![Gauge Badge](http://getgauge.io/Gauge_Badge.svg)](http://getgauge.io)
