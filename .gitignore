@@ -5,7 +5,9 @@ Mizu-Gauge-Automation/bin/*
 Mizu-Gauge-Automation/bin/Debug/*
 Mizu-Gauge-Automation/logs/*
 Mizu-Gauge-Automation/obj/*
+Mizu-Gauge-Automation/.gauge/*
 Mizu-Gauge-Automation/gauge-bin/*
+Mizu-Gauge-Automation/reports/*
 
 
 #Force to perform check-in
